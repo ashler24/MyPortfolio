@@ -26,15 +26,16 @@ class Header extends Component{
                 <Navbar dark expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav}/>
-                        <NavbarBrand className="mr-auto">Abhijeet Pawar</NavbarBrand>    
+                        <NavbarBrand className="Navbar-Brand mr-auto">Abhijeet Pawar</NavbarBrand>    
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="ml-auto">
                                 <NavItem>
                                     <NavLink className="nav-link" to="/home">Home</NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to="/aboutme">About Me</NavLink>
                                 </NavItem>
+
                                 <NavItem>
                                     <NavLink className="nav-link" to="/contactme">Contact Me</NavLink>
                                 </NavItem>

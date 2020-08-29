@@ -1,9 +1,37 @@
-.navbar-dark {
-    background-color: #51e2f5;
+.Card-Color{
+  background-color: #171a23;
+  border: 2px solid white;
+  margin-top: 100px;
+  
+}
+.Card-Title{
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
 }
 
 .cardtext {
-    font-family: roboto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    color: blue;
+    color: white;
+}
+
+.Navbar-Brand{
+    font-family: monospace;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.05;
+    background-color: var(--color-accent, #168dd9);
+    color: var(--color-background-2, #fff);
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 15px 20px;
+}
+
+.jumbotron{
+    padding: 15px 20px;
+    margin:  100px -20px;
+
 }
