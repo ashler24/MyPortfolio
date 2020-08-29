@@ -5,7 +5,7 @@ export const BIODATA = [
         company:"CADC R&D",
         designation:"Project Engineer",
         hobbies:["Reading","Playing Games","Yoga"],
-        image:'MyPortfolio/assets/images/profilepic.jpg'
+        image:'assets/images/profilepic.jpg'
 
     }
 ]
