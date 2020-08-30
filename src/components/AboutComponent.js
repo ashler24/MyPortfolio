@@ -6,9 +6,9 @@ export default function About() {
 
     return (
         <div>
-            <div className="container-fluid">
+            <div className="container">
                 <div className="row">
-                    <div className="col-4 col-md-6 col-sm">
+                    <div className="col-12 col-md-6 col-sm">
                         <div className="p-3 bg-primary my-2 rounded">
                             <Toast>
                                 <ToastHeader>
@@ -25,7 +25,7 @@ export default function About() {
                 </div>
                 <div className="row">
                     <div className="col-4"></div>
-                    <div className="col-4 col-md-6 col-sm">
+                    <div className="col-12 col-md-6 col-sm">
                     <div className="p-3 bg-secondary my-2 rounded">
                     <Toast>
                         <ToastHeader>
@@ -38,7 +38,7 @@ export default function About() {
             </div>
 
                     </div>
-                    <div className="col-4"></div>
+                    
 
                 </div>
                 <div className="row"></div>
