@@ -1,29 +1,19 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle } from 'reactstrap'
+import {ImTwitter,ImGithub,ImLinkedin, ImInstagram} from 'react-icons/im'
 
 function Contact() {
     return (
         <div>
-            <div className="container">
-                <div className="row justify-content-centre">
-                    <div className="col-6 col-md-6">
-                        <Card>
-                            <CardTitle>Contact Me</CardTitle>
-                            <CardBody>
-                                <CardText>
-                                    <a target="_blank" href="https://twitter.com/pawar2467">
-                                        <img align="left" alt="Abhijeet Pawar | Twitter" width="25px" src="https://raw.githubusercontent.com/Akshay2996/Akshay2996/master/assets/twitter.png" />
-                                    </a>
-                                    <a target="_blank" href="https://www.instagram.com/lone_w_olf/">
-                                        <img align="left" alt="Abhijeet Pawar | Instagram" width="25px" src="https://raw.githubusercontent.com/Akshay2996/Akshay2996/master/assets/instagram.png" />
-                                    </a>
-                                    <a target="_blank" href="https://www.linkedin.com/in/abhijeet-pawar-b96237130/">
-                                        <img align="left" alt="Abhijeet Pawar | LinkedIn" width="25px" src="https://raw.githubusercontent.com/Akshay2996/Akshay2996/master/assets/linkedin.png" />
-                                    </a>
-                                </CardText>
-                            </CardBody>
-                        </Card>
-                    </div>
+            <div id="contact" className="row section">
+                <div className="offset-4"><hr class="padding-bottom-large margin-none"/></div>
+                    <div className="">
+                        <h2 className="text-center">Contact</h2>
+                        <p className="text-center text-medium">
+                            <a title="Twitter" href="https://twitter.com/pawar2467"><ImTwitter /></a>&nbsp;&nbsp;
+                            <a title="LinkedIn" href="https://www.linkedin.com/in/abhijeet-pawar-b96237130/"><ImLinkedin /></a>&nbsp;&nbsp;
+                            <a title="GitHub" href="https://github.com/ashler24"><ImGithub /></a>&nbsp;&nbsp;
+                            <a title="instagram" href="https://instagram.com/lone_w_olf"><ImInstagram /></a>
+                        </p>
                 </div>
             </div>
         </div>

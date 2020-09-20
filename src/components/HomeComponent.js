@@ -1,5 +1,7 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Progress } from 'reactstrap'
+import { Progress } from 'reactstrap'
+import { ImTwitter,ImGithub,ImLocation } from "react-icons/im";
+
 
 
 
@@ -10,18 +12,21 @@ function ProfileCard({ bdata }) {
         return (
 
             <div>
-                <Card key={bdata.id} className="Card-Color">
-                    <CardImg top src={bdata.image} alt={bdata.name} />
-                    <CardBody>
-                        <CardTitle className="Card-Title">{bdata.name}</CardTitle>
-                        <CardText className="cardtext">
-                            {bdata.company}
-                        </CardText>
-                        <CardText className="cardtext">
-                            {bdata.designation}
-                        </CardText>
-                    </CardBody>
-                </Card>
+                <img className="round shade" src={bdata.image} height="150" width="150" />
+                <div className="col-12">
+                    <h1 className="text-thinner">{bdata.name}</h1>
+                    <p className="text-uppercase text-wide margin">Project Engineer</p>
+                    <p className="margin">
+                    When I'm not at my computer, I like to do yoga and read books.
+           
+                    </p>
+                    <p className="margin">
+                        
+                        <a title="Location" href="#"><ImLocation />&nbsp;Pune, MH</a>&nbsp;&nbsp;
+                        <a title="Twitter" href="https://twitter.com/pawar2467"><ImTwitter />&nbsp;Abhijeet Pawar</a>&nbsp;&nbsp;
+                        <a title="GitHub" href="https://github.com/ashler24"><ImGithub />&nbsp;ashler24</a>
+                    </p>
+                </div>
             </div>
 
 
@@ -41,13 +46,48 @@ function Portfolio() {
     return (
 
         <div>
-
-            <h1 className="display-3">Hello, world!</h1>
-            <p className="lead">I am a Web Developer.</p>
-            <hr className="my-2" />
-
-
-
+            <div id="skills" className="row border-top">
+                <div className="offset-1">
+                    <h4>Specialty</h4>
+                    <ul>
+                        <li>Java Programming</li>
+                        <li>Web App Development</li>
+                    </ul>
+                    </div>
+                    <div className="offset-1">
+                    <h4>Skills</h4>
+                    <p>
+                        <code>Java</code>
+                        <code>JavaScript</code>
+                        <code>Angular</code>
+                        <code>React</code>
+                        <code>MySQL</code>
+                        <code>MongoDB</code>
+                        <code>Docker</code>
+                        <code>Git</code>
+                        <code>GitHub</code>
+                    </p>
+                </div>
+            </div>
+            <div id="experience" className="row">
+                <div className="offset-1"><hr className="margin-none"/></div>
+                <div className="col-12">
+                <h2>Experience</h2>
+                </div>
+                <div className="col-12">
+                <h4>
+                    <a title="CDAC R&D" href="https://www.cdac.in/">CDAC, R&D.</a> - Project Engineer
+                </h4>
+                <p>
+                    Pune, MH - <i>Febuary 2020 - Current</i> (1 year)<br/>
+                  
+                    <code className="text-small">Java</code>
+                    <code className="text-small">Oracle</code>
+                    <code className="text-small">SpringMVC</code>
+                    <code className="text-small">J2EE</code>
+                </p>
+            </div>
+        </div>
         </div>
 
     )
@@ -69,17 +109,16 @@ const Home = (props) => {
     if (props.biodata != null) {
         return (
 
-            <div className="container">
+            <div className="container text-center">
                 <div className="row">
-                    <div className="col-12 col-md-5 col-sm col-xs">
+                    <div className="col-12">
                         <ProfileCard bdata={props.biodata} />
                     </div>
-                    <div className="col-12 col-md-5 col-sm col-xs">
-                        <div className="container">
-                            <div className="jumbotron">
-                                <Portfolio />
-                            </div>
-                        </div>
+                    
+                </div>
+                <div className="row">
+                    <div className="col-12">
+                      <Portfolio />
                     </div>
                 </div>
                 <div className="row">
