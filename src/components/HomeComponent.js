@@ -12,7 +12,7 @@ function ProfileCard({ bdata }) {
         return (
 
             <div>
-                <img className="round shade" src={bdata.image} height="150" width="150" />
+                <img className="round shade margin-top" src={bdata.image} height="150" width="150" />
                 <div className="col-12">
                     <h1 className="text-thinner">{bdata.name}</h1>
                     <p className="text-uppercase text-wide margin">Project Engineer</p>
@@ -24,7 +24,7 @@ function ProfileCard({ bdata }) {
                         
                         <a title="Location" href="#"><ImLocation />&nbsp;Pune, MH</a>&nbsp;&nbsp;
                         <a title="Twitter" href="https://twitter.com/pawar2467"><ImTwitter />&nbsp;Abhijeet Pawar</a>&nbsp;&nbsp;
-                        <a title="GitHub" href="https://github.com/ashler24"><ImGithub />&nbsp;ashler24</a>
+                        <a title="GitHub" href="https://github.com/ashler24"><ImGithub />&nbsp;ashler24</a>&nbsp;&nbsp;
                     </p>
                 </div>
             </div>
@@ -47,14 +47,14 @@ function Portfolio() {
 
         <div>
             <div id="skills" className="row border-top">
-                <div className="offset-1">
+                <div>
                     <h4>Specialty</h4>
                     <ul>
                         <li>Java Programming</li>
                         <li>Web App Development</li>
                     </ul>
                     </div>
-                    <div className="offset-1">
+                    <div >
                     <h4>Skills</h4>
                     <p>
                         <code>Java</code>
