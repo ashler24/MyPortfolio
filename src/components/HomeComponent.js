@@ -45,7 +45,7 @@ function Portfolio() {
 
     return (
 
-        <div>
+        <div className="container">
             <div id="skills" className="row border-top">
                 <div>
                     <h4>Specialty</h4>
@@ -55,22 +55,24 @@ function Portfolio() {
                     </ul>
                     </div>
                     <div >
-                    <h4>Skills</h4>
-                    <p>
-                        <code>Java</code>
-                        <code>JavaScript</code>
-                        <code>Angular</code>
-                        <code>React</code>
-                        <code>MySQL</code>
-                        <code>MongoDB</code>
-                        <code>Docker</code>
-                        <code>Git</code>
-                        <code>GitHub</code>
-                    </p>
+                    <h4>Skills</h4>      
+                            <div className="col-12">
+                                <code>Java</code>
+                                <code>JavaScript</code>
+                                <code>Angular</code>
+                                <code>React</code>
+                            </div>
+                            <div className="col-12">
+                                <code>MySQL</code>
+                                <code>MongoDB</code>
+                                <code>Docker</code>
+                                <code>Git</code>
+                                <code>GitHub</code>
+                            </div>
                 </div>
             </div>
             <div id="experience" className="row">
-                <div className="offset-1"><hr className="margin-none"/></div>
+                <div className="offset-1"><hr className="margin-top"/></div>
                 <div className="col-12">
                 <h2>Experience</h2>
                 </div>
